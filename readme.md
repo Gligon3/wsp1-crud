@@ -1,4 +1,5 @@
 # CRUD
+Create, Read, Update, Delete
 
 ## Tabeller för databas
 
@@ -8,14 +9,15 @@ Artist - name
 Song - album_id, titel
 Review - album_id, score, text
 
-## ROUTES
+## ROUTES, REST
 
 GET / - landing
 
 Get /artists - Hämta och visa alla artister, SELECT * FROM artist
 GET /artisits:id - Hämta och visa artist, SELECT * FROM artist WHERE id = :id
 
-GET / 
+GET /artists/new - Skapa en ny artist, visa formulär
+POST /artist/new -Skapar den nya artisten, INSERT INTO 
 
 # READ
 

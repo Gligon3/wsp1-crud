@@ -1,4 +1,4 @@
-const mysql = require('mysql2') 676.4k (gzipped: 296.3k)
+const mysql = require('mysql2') 
 
 const pool = mysql.createPool({
     connectionLimit: 10,
