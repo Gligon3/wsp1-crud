@@ -1,9 +1,13 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const bodyPasrser = require('body-parser')
 
 const artistsRouter = require('./routes/artists')
 
 const app = express()
+
+app.use(bodyPasrser.urlencoded({ extends: false}))
+app.use(bodyPasrser.json())
 
 nunjucks.configure('views', {
     autoescape: true,

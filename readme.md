@@ -11,13 +11,13 @@ Review - album_id, score, text
 
 ## ROUTES, REST
 
-GET / - landing
+ [x] GET / - landing
 
-Get /artists - Hämta och visa alla artister, SELECT * FROM artist
-GET /artisits:id - Hämta och visa artist, SELECT * FROM artist WHERE id = :id
+[x] Get /artists - Hämta och visa alla artister, SELECT * FROM artist
+[x] GET /artisits:id - Hämta och visa artist, SELECT * FROM artist WHERE id = :id
 
-GET /artists/new - Skapa en ny artist, visa formulär
-POST /artist/new -Skapar den nya artisten, INSERT INTO 
+[x] GET /artists/new - Skapa en ny artist, visa formulär
+[] POST /artist/new -Skapar den nya artisten, INSERT INTO 
 
 # READ
 

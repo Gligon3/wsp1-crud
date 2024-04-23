@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<main class="wrapper">
+    <h1>
+        {{ title }}
+    </h1>
+    <p><a href="/artists/New">Create new</a> artist.</p>
+
+    <ul>
+        {% for artist in artists}
+        <li><a href="/artist/{{ artist.id }}">{{ artist.name }}</a></li>
+        {% endfor %}
+    </ul>
+</main>
+{% endblock %}
