@@ -22,10 +22,21 @@ router.get('/new', (req, res) => {
     })
 })
 
-router.post('/new', (req, res) => {
+router.post('/new', async (req, res) => {
     console.log(req.body.name)
+    const name = req.body.name
 
-    res.send('form posted')
+    const [result] = await pool.promise().query('INSERT INTO william_artist (name) VALUES (?)', [name])
+
+    if (result.affectedRows == 1) {
+        res.send('form posted, artist created')
+    } else {
+        console.log(result)
+        // meddela att något är fel
+        res.redirect('/artists/new')
+
+    }
+
 })
 
 // get /artists/:id
